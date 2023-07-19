@@ -159,8 +159,8 @@
 }
 
 .video-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
   text-align: center;
   gap: 10px;
@@ -180,6 +180,17 @@
 }
 
 /* Games Video Section End */
+
+/* Genre Section Starts */
+.genre-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  text-align: center;
+  width: 80vw;
+  margin: 120px auto;
+}
+/* Genre Section Ends */
 
 @media screen and (max-width: 576px) {
   :root {
@@ -220,5 +231,9 @@
   .video-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .genre-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
