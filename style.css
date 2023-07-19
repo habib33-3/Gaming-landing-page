@@ -113,9 +113,9 @@
   font-weight: 500;
 }
 
-#rough-btn{
-    background-color: #4EC5F7;
-    margin-left: 10px;
+#rough-btn {
+  background-color: #4ec5f7;
+  margin-left: 10px;
 }
 
 .banner-img img {
@@ -126,10 +126,66 @@
 }
 /* Banner Section Ends */
 
+/* Games Video Section Starts */
+.games-video {
+  width: 80%;
+  margin: 120px auto;
+  text-align: center;
+  padding: 0;
+}
+.section-title {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: auto;
+  margin-left: 0;
+  padding: 0;
+}
+
+#funny-games {
+  background: linear-gradient(to bottom, #70606f 0%, #8758f1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.section-description {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 10px auto 48px;
+  margin-left: 0;
+  padding: 0;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+  gap: 10px;
+  margin-left: 0;
+}
+
+.video img {
+  width: 100%;
+  height: 90%;
+}
+
+.video_description {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Games Video Section End */
+
 @media screen and (max-width: 576px) {
   :root {
     font-size: 12px;
   }
+
   .nav-section,
   .item-container,
   .menu-container,
@@ -137,6 +193,7 @@
     flex-direction: column;
     gap: 70px;
   }
+
   .nav-section {
     margin: auto;
     padding: 70px 0;
@@ -152,10 +209,16 @@
     font-size: 60px;
   }
 
-  .banner-list{
+  .banner-list {
     text-align: center;
   }
-  .btn-container{
+  .btn-container {
     display: flex;
+  }
+
+  .games-video,
+  .video-container {
+    display: flex;
+    flex-direction: column;
   }
 }
