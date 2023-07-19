@@ -70,6 +70,10 @@
   padding: 10px 30px;
 }
 
+.fa-brands:hover {
+  cursor: pointer;
+}
+
 .fa-youtube {
   color: red;
 }
@@ -192,6 +196,42 @@
 }
 /* Genre Section Ends */
 
+/* Footer Starts */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b0223;
+  color: white;
+  gap: 50px;
+  padding: 120px 0;
+}
+
+.footer-section h3 {
+  color: white;
+}
+
+.feature-container,
+.social-container,
+.privacy-container {
+  display: flex;
+  gap: 60px;
+}
+
+.social {
+  height: 100%;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  gap: 3px;
+}
+
+
+
+/* Footer Ends */
+
 @media screen and (max-width: 576px) {
   :root {
     font-size: 12px;
@@ -236,4 +276,22 @@
   .genre-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .feature-container,
+.social-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+.privacy-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.copyright{
+    flex-direction: column;
+    text-align: center;
+}
+
 }
