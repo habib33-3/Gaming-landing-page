@@ -1,8 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 15px 26px;
+  /* height: 60px;
+  width: 80px; */
+  border: 0;
+  border-radius: 48px;
+  background-color: rgb(255, 66, 165);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* Nav Bar */
@@ -10,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 500px;
+  gap: 400px;
   padding: 0 130px;
   margin: 38px 0;
 }
@@ -19,6 +35,16 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.logo-container h3 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#g {
+  color: #ff42a5;
 }
 
 .item-container {
@@ -44,12 +70,92 @@
   padding: 10px 30px;
 }
 
+.fa-youtube {
+  color: red;
+}
+
+/* Nav Section Ends */
+
+/* Banner Section Starts */
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.banner-text h2 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  background: linear-gradient(to bottom, #70606f 0%, #8758f1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5.9375rem;
+  font-weight: 800;
+}
+
+.banner-list {
+  margin: 15px 0;
+}
+
+.banner-list li {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#rough-btn{
+    background-color: #4EC5F7;
+    margin-left: 10px;
+}
+
+.banner-img img {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+/* Banner Section Ends */
+
 @media screen and (max-width: 576px) {
-    .nav-section, .item-container,.menu-container{
-        flex-direction: column;
-        gap: 70px;
-    }
-   .nav-section{
+  :root {
+    font-size: 12px;
+  }
+  .nav-section,
+  .item-container,
+  .menu-container,
+  .banner {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .nav-section {
     margin: auto;
     padding: 70px 0;
-   }
+  }
+
+  .banner {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .banner-text h1 {
+    font-size: 60px;
+  }
+
+  .banner-list{
+    text-align: center;
+  }
+  .btn-container{
+    display: flex;
+  }
+}
